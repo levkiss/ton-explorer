@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "ton-explorer"
+version = "0.1.0"
+description = "TON blockchain explorer tools"
+authors = ["Lev Kislyuk <ls.kislyuk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.3"
+pydantic = "^2.10.3"
+sqlalchemy = "^2.0.36"
+psycopg2-binary = "^2.9.10"
+python-dotenv = "^1.0.1"
+structlog = "^24.4.0"
+pydantic-settings = "^2.7.0"
+pytoniq-core = "^0.1.40"
+aiohttp = "^3.11.10"
+tenacity = "^9.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+pytest-asyncio = "^0.21.0"
+black = "^23.0.0"
+isort = "^5.12.0"
+mypy = "^1.0.0"
+pylint = "^2.17.0"
+pre-commit = "^3.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
